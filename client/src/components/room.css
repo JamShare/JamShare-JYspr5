@@ -1,0 +1,225 @@
+
+.jybanner {
+  background-color:black;
+  width: 100%;
+  height:100px;
+  margin-top: -10px;
+  position:fixed;
+  justify-content: center;
+  display:flex;
+  overflow: hidden;
+}
+.jam-logo {
+  width:auto;
+  height: 100px;;
+  display: block;
+  margin: 10px;
+}
+
+.round{
+  object-fit: fill;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+button.up{
+  height: 25px;
+  text-align: center;
+  width: 40px;
+  color: orange;
+  background-color:  purple;
+  font-weight: bold;
+  font-size: 10pt;
+  top: -1px;
+  right: 2px;
+  position:absolute;
+}
+button.down{
+  height: 25px;
+  text-align: center;
+  width: 40px;
+  color: orange;
+  background-color:  purple;
+  font-weight: bold;
+  font-size: 10pt;
+  bottom: -1px;
+  right: 2px;
+  position:absolute;
+}
+button.rec{
+  height: 50px;
+  width: 240px;
+  margin-top: 20px;
+
+  text-align: center;
+  color: orange;
+  background-color:  purple;
+  border: 3px solid #ffffff; 
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 10pt;
+
+}
+.ProjectSectionContent {
+  display: flex;
+  height: 100vh;
+  background-color:  rgb(46, 46, 46);
+}
+.ProjectSectionBlock {
+  display:grid;
+}
+
+.RoomComponentList{
+  padding: 0px;
+  margin: 5px; 
+  background-color: rgb(216, 216, 216);
+  display:block;
+  text-align: left;
+  border: 3px solid #ffffff; 
+  border-radius: 5px;
+  color: purple;
+  width: auto;
+  height: 55px;
+  font-family: "IndieFlower";
+  font-size: 18pt;
+  font-weight: bold;
+  position: relative;
+}
+
+.userblock{
+  background-color: rgb(117, 117, 117);
+  display: block;
+  border: 3px solid #ffffff;
+  border-radius: 5px;
+  color: rgb(216, 216, 216);
+  width: 300px;
+  height: auto;
+  left: 10px;
+  bottom: 60px;
+  position: fixed;
+  overflow:scroll;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+
+.recordblock{
+  background-color: rgb(117, 117, 117);
+  display: block;
+  border: 3px solid #ffffff;
+  border-radius: 5px;
+  color: rgb(216, 216, 216);
+  width:auto;
+  height: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  left: 500px;
+    right: 500px;
+    bottom: 60px;
+  position: fixed;
+  overflow:scroll;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+
+.jamblock{
+  
+  text-align: center;
+  background-color: rgb(117, 117, 117);
+  border: 3px solid #ffffff;
+  border-radius: 5px;
+  color: rgb(216, 216, 216);
+  width: 300px;
+  height: auto;
+  font-family: "IndieFlower";
+  font-size: 18pt;
+  bottom: 60px;
+  position: fixed;
+  overflow:scroll;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+
+@media (0px<=width<=820px) {
+  .UserComponentList{
+    font-size: 0px;
+  }
+  .RoomComponentList{
+    margin-right: 8px;
+  }
+  .userblock{
+    padding: 0px;
+    width: 130px;
+    border: 0px solid #ffffff;
+    top: 100px;
+    left:-10px;
+    
+  }
+  .recordblock{
+    border: 0px solid #ffffff;
+    padding: 0px;
+    margin: 0px;
+    left: 100px;
+    right: 263px;
+    top: 100px;
+    min-width: 175px;
+  }
+  .jamblock{
+    padding: 0px;  
+    margin: 0px;
+    top: 100px;
+    right: -20px;
+    width: 280px;
+  }
+}
+
+@media (820px<=width<=1275px) {
+  .RoomComponentList{
+    margin-right: 5px; 
+  }
+  .userblock{
+    
+    padding: 0px;
+    width: 290px;
+    margin: 5px;
+    top: 100px;
+  }
+  .recordblock{
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+    left: 305px;
+    right: 305px;
+    top: 100px;
+  }
+  .jamblock{
+    padding: 0px;
+    margin: 5px;
+    top: 100px;
+    right: 0px;
+  }
+}
+
+@media (width>=1275px) {
+  .userblock{
+    padding: 10px;
+    width: 300px;
+    margin: 10px;
+    top: 130px;
+  }
+  .recordblock{
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 10px;
+    left: 350px;
+    right: 350px;
+    top: 130px;
+  }
+  .jamblock{
+    padding-top: 50px;
+    margin: 10px;
+    top: 130px;
+    right: 10px;
+  }
+}
